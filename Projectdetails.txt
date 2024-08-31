@@ -1,0 +1,30 @@
+"Flavour Fusion" is a sleek and modern single-page web application designed for an ice cream vendor profile. Built with React.js and styled using Tailwind CSS with additional simple CSS, the UI showcases the trendy glassmorphism effect, often seen in iOS devices. The design is fully responsive, ensuring compatibility with all screen sizes, from very small to extra-large.
+
+Key Features and Functionalities:
+Profile Image Customization:
+
+At the top of the page, there's an empty profile image placeholder.
+A camera icon appears on the right side of the border, allowing you to either view or change the profile image.
+Upon selecting "Change Image," the application will access your gallery, enabling you to choose a new image that is immediately applied to your profile.
+The "See Image" option enlarges the current profile picture for a better view.
+Contact Section:
+
+Below the profile image, a "Call to Us" button is prominently displayed.
+Clicking this button reveals a dropdown containing detailed contact information, making it easy to get in touch.
+Limited-Time Offers:
+
+A section dedicated to limited-time offers features a stopwatch, adding urgency and encouraging quick action on the deals presented.
+Our Other Products:
+
+This section showcases other products, with images that reveal their names when hovered over.
+Clicking on an image enlarges it, allowing for a closer look.
+Navigation arrows are provided to toggle between images while they are enlarged, enhancing the browsing experience.
+Review Section:
+
+Visitors can leave reviews and see them displayed on the site.
+The review section offers sorting options by date, rating, or helpfulness, helping users to find the most relevant feedback.
+Menu Section:
+
+The menu section presents various product menus.
+An arrow at the end of each menu item allows users to toggle and view the full details related to that item.
+This application offers a user-friendly experie

@@ -1,0 +1,23 @@
+.background-image {
+    background-image: url('D:\Excellence\VendorProfileCopy\src\Components\profilebackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .textstyle{
+    font-family:"Dancing Script", cursive;
+    font-weight: bolder;
+  }
+  .fontcolor {
+    background-image: linear-gradient(to right,#D4A88F,#C07268 ,#5E3023);
+    background-clip: text;           
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .textshadow{
+    text-shadow: 0 0 3px #C07268 , 0 0 5px #5E3023;
+  }
+  .cardscolor{
+    background-image: linear-gradient(to right, rgb(244, 244, 242), rgb(253, 193, 192), rgb(200, 199, 215))
+}

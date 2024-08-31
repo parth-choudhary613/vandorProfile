@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nosifer&display=swap');
+
+.glassmorphism{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 3px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.neuromorphism{
+   
+    background: #D1D8EC;
+    -webkit-box-shadow: 25px 25px 36px #54565e, -25px -25px 36px #ffffff;
+    box-shadow: 25px 25px 36px #54565e, -25px -25px 36px #ffffff;
+}
+.background-image2 {
+    background-image: url("D:\Excellence\VendorProfileCopy\src\Components\backgruond-image2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
