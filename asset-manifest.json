@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vandorProfile/static/css/main.7f89cac0.css",
-    "main.js": "/vandorProfile/static/js/main.960d5f8a.js",
+    "main.js": "/vandorProfile/static/js/main.feb40f2f.js",
     "static/js/453.99a2c77d.chunk.js": "/vandorProfile/static/js/453.99a2c77d.chunk.js",
     "static/media/profilebackground.jpg": "/vandorProfile/static/media/profilebackground.8eae042ca00d45bf1751.jpg",
     "static/media/offer1.jpg": "/vandorProfile/static/media/offer1.4b808eb029dd835843cd.jpg",
@@ -27,11 +27,11 @@
     "static/media/best seller4.jpg": "/vandorProfile/static/media/best seller4.bd9580475b0411cf0762.jpg",
     "index.html": "/vandorProfile/index.html",
     "main.7f89cac0.css.map": "/vandorProfile/static/css/main.7f89cac0.css.map",
-    "main.960d5f8a.js.map": "/vandorProfile/static/js/main.960d5f8a.js.map",
+    "main.feb40f2f.js.map": "/vandorProfile/static/js/main.feb40f2f.js.map",
     "453.99a2c77d.chunk.js.map": "/vandorProfile/static/js/453.99a2c77d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f89cac0.css",
-    "static/js/main.960d5f8a.js"
+    "static/js/main.feb40f2f.js"
   ]
 }
