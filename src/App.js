@@ -4,7 +4,7 @@ import Profile from '../src/profileSection/profileSection';
 
 const App = () => {
   return (
-    <Router basename="/vendorprofile">
+    <Router basename="/vendorProfile">
       <Routes>
         <Route path="/" element={<Profile />} />
       </Routes>
