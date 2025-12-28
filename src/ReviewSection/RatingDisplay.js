@@ -1,22 +1,31 @@
 import React from 'react';
+import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 
 const RatingDisplay = ({ rating }) => {
+  // Helper to render stars based on numeric value
+  const renderStars = () => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      if (i <= rating) {
+        stars.push(<FaStar key={i} className="text-yellow-400 w-6 h-6 md:w-8 md:h-8 drop-shadow-sm" />);
+      } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
+        stars.push(<FaStarHalfAlt key={i} className="text-yellow-400 w-6 h-6 md:w-8 md:h-8 drop-shadow-sm" />);
+      } else {
+        stars.push(<FaRegStar key={i} className="text-gray-300 w-6 h-6 md:w-8 md:h-8" />);
+      }
+    }
+    return stars;
+  };
+
   return (
-    <div className="flex items-center m-4">
-      <span className="text-xl md:text-2xl font-bold">{rating.toFixed(1)}</span>
-      <div className="flex ml-2">
-        {[...Array(5)].map((_, index) => (
-          <svg
-            key={index}
-            className={`w-5 h-5 md:w-6 md:h-6 ${index < rating ? 'text-yellow-400' : 'text-gray-300'}`}
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 .587l3.668 7.435 8.21 1.191-5.937 5.787 1.4 8.15L12 18.897l-7.341 3.853 1.4-8.15L.121 9.213l8.21-1.191z" />
-          </svg>
-        ))}
+    <div className="flex flex-col items-center justify-center py-4">
+      <div className="text-6xl font-extrabold text-pink-500 ice-cream-font mb-2">
+        {rating.toFixed(1)}
       </div>
-      <span className="ml-2 text-gray-600 text-sm md:text-base">out of 5</span>
+      <div className="flex space-x-1 mb-2">
+        {renderStars()}
+      </div>
+      <span className="text-slate-500 font-medium">out of 5 stars</span>
     </div>
   );
 };

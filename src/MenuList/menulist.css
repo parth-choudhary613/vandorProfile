@@ -1,0 +1,114 @@
+/* 1. Import Fonts: 'Fredoka One' (Bubbly/Ice Cream) and 'Quicksand' (Clean/Round) */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* 2. Global Defaults */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif; /* Default body font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Custom Font Classes */
+.ice-cream-font {
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1.5px;
+}
+
+/* 4. Background Blob Animations (Floating Colors) */
+@keyframes blob-float {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob-float 10s infinite alternate; /* Smooth, continuous movement */
+}
+
+/* Delays to make multiple blobs move out of sync */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* 5. Custom Scrollbar (Pink Theme) */
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf2f8; /* Very light pink */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6; /* Pink-400 */
+  border-radius: 20px;
+  border: 3px solid #fdf2f8; /* Creates padding effect around scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777; /* Darker Pink on hover */
+}
+
+/* 6. Utility Helper: Glassmorphism */
+/* You can use this class instead of writing long Tailwind chains if you prefer */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+/* 7. Text Selection Color */
+::selection {
+  background: #fbcfe8; /* Pink highlight */
+  color: #831843; /* Dark pink text */
+}
+/* --- ADD THESE TO THE BOTTOM OF productSection.css --- */
+
+/* Keyframes for falling down and slightly rotating */
+@keyframes fall-and-spin {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.7; /* Fade in quickly */
+    }
+    80% {
+        opacity: 0.7; /* Stay visible */
+    }
+    100% {
+        /* Fall past the bottom and rotate fully */
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* The class applied to each sprinkle */
+.particle-animation {
+    /* Use the variables we set in the JSX style={{}} prop */
+    animation-name: fall-and-spin;
+    animation-duration: var(--fall-duration, 20s);
+    animation-delay: var(--fall-delay, 0s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Start invisible above the screen */
+    transform: translateY(-10vh); 
+    top: 0;
+}
