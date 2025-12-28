@@ -50,7 +50,7 @@ const Navbar = () => {
       <nav
         className={`fixed z-50 transition-all duration-500 ease-in-out ${
           scrolled
-            ? 'top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-[90%] md:max-w-6xl rounded-2xl bg-white/80 backdrop-blur-lg shadow-xl border border-white/50 py-3'
+            ? 'top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-[90%] md:max-w-6xl rounded-2xl bg-white/80  shadow-xl border border-white/50 py-3'
             : 'top-0 left-0 w-full bg-transparent py-6'
         }`}
       >

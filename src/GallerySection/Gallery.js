@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight, FaTimes, FaExpand } from 'react-icons/fa';
 import '../profileSection/profileSection.css'; // Ensure CSS is imported
-import Review from '../ReviewSection/Mainreview';
+
 
 // --- PLACEHOLDER IMAGES (Uncomment your imports below to use your local files) ---
 // import Image1 from '../Components/lightbox.jpg';
@@ -54,7 +54,7 @@ const Lightbox = () => {
         className="relative z-10 w-full max-w-7xl mx-auto mt-12 mb-12 px-4"
       >
         {/* Main Glass Container */}
-        <div className="bg-white/40 backdrop-blur-xl rounded-[3rem] p-6 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/60 relative overflow-hidden">
+        <div className="bg-white/40 -xl rounded-[3rem] p-6 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/60 relative overflow-hidden">
             
             {/* Header */}
             <div className="text-center mb-10">
@@ -105,7 +105,8 @@ const Lightbox = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={closeLightbox}
-                className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/90 backdrop-blur-md p-4"
+                className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/90 
+    -md p-4"
             >
                 {/* Close Button */}
                 <button 
@@ -139,13 +140,15 @@ const Lightbox = () => {
                     {/* Navigation Buttons */}
                     <button
                         onClick={goToPrevious}
-                        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-4 rounded-full backdrop-blur-sm transition-all"
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-4 rounded-full 
+            -sm transition-all"
                     >
                         <FaChevronLeft size={24} />
                     </button>
                     <button
                         onClick={goToNext}
-                        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-4 rounded-full backdrop-blur-sm transition-all"
+                        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-4 rounded-full 
+            -sm transition-all"
                     >
                         <FaChevronRight size={24} />
                     </button>
@@ -154,9 +157,6 @@ const Lightbox = () => {
             </motion.div>
         )}
       </AnimatePresence>
-      
-      {/* Review Component */}
-      <Review/>
     </>
   );
 };

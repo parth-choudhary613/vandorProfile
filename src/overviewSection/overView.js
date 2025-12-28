@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { TiSocialInstagram } from "react-icons/ti";
 import { FaFacebook, FaTwitter, FaClock, FaPhoneAlt, FaMapMarkerAlt, FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion"; 
-import Lightbox from '../GallerySection/Gallery';
+
 import Map from './map';
 import './overview.css'; 
 
@@ -130,7 +130,7 @@ const Dashboard = () => {
               content="+91 789 654 123"
               subContent="flavourfusion@gmail.com"
           />
-          <motion.div variants={itemVariants} className="bg-white/60 backdrop-blur-md p-6 rounded-[2rem] shadow-lg border border-white hover:shadow-xl transition-all duration-300 group">
+          <motion.div variants={itemVariants} className="bg-white/60 -md p-6 rounded-[2rem] shadow-lg border border-white hover:shadow-xl transition-all duration-300 group">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-xl font-bold text-gray-700">Follow Us</h3>
               <span className="text-2xl text-blue-400">✨</span>
@@ -164,7 +164,7 @@ const Dashboard = () => {
 
 
         {/* 3. OFFERS SECTION */}
-        <div className="max-w-7xl mx-auto mb-20 bg-white/40 backdrop-blur-md rounded-[3rem] p-6 md:p-12 border border-white/50 shadow-xl relative overflow-hidden">
+        <div className="max-w-7xl mx-auto mb-20 bg-white/40 -md rounded-[3rem] p-6 md:p-12 border border-white/50 shadow-xl relative overflow-hidden">
           <TitleHeader main="Limited Offer" highlight="Mega" />
           
           <CountdownTimer />
@@ -192,7 +192,7 @@ const Dashboard = () => {
                   <Map /> 
               </div>
           </div>
-          <Lightbox />
+  
         </div>
       </div>
     </div>
@@ -226,7 +226,7 @@ const InfoCard = ({ title, icon, content, subContent }) => (
     <motion.div 
         variants={itemVariants} 
         whileHover={{ y: -5 }}
-        className="bg-white/60 backdrop-blur-md p-6 rounded-[2rem] shadow-lg border border-white hover:shadow-xl transition-all duration-300"
+        className="bg-white/60 -md p-6 rounded-[2rem] shadow-lg border border-white hover:shadow-xl transition-all duration-300"
     >
         <div className="flex justify-between items-center mb-4">
             <h3 className="text-xl font-bold text-gray-700">{title}</h3>

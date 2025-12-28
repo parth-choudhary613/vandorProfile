@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import RatingDisplay from './RatingDisplay';
 import ReviewList from './Reviewlist';
 import ReviewForm from './Reviewform'; 
-import Recommended from '../Recommendationsection/Recommend'; 
-import MainList from '../MenuList/mainList';
-// import '../productSection/productSection.css'; // Ensure styling is imported
+// import Recommended from '../Recommendationsection/Recommend'; 
+// import MainList from '../MenuList/mainList';
+import '../profileSection/profileSection.css'; // Ensure styling is imported
 
 const ReviewSection = () => {
   const [reviews, setReviews] = useState([
@@ -67,8 +67,8 @@ const ReviewSection = () => {
         </motion.div>
       </div>
 
-      <MainList />
-      <Recommended/>
+      {/* <MainList />
+      <Recommended/> */}
     </>
   );
 };

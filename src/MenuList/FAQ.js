@@ -15,7 +15,7 @@ const FAQs = () => {
       viewport={{ once: true }}
       className='rounded-[2.5rem] mt-8 mb-20 bg-gradient-to-br from-purple-100 to-pink-100 p-1 shadow-lg'
     >
-      <div className="bg-white/60 backdrop-blur-xl rounded-[2.4rem] p-8 md:p-12 text-slate-800"> 
+      <div className="bg-white/60 -xl rounded-[2.4rem] p-8 md:p-12 text-slate-800"> 
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center ice-cream-font text-purple-600">
             Frequently Asked <span className="text-slate-800">Questions</span>
         </h2>

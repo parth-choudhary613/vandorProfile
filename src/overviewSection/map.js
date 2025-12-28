@@ -13,7 +13,7 @@ const Map = () => {
       className="relative z-10 w-full max-w-6xl mx-auto mt-12 mb-12 px-4"
     >
       {/* Glassmorphism Container */}
-      <div className="bg-white/40 backdrop-blur-xl rounded-[2rem] p-4 md:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/60 relative overflow-hidden">
+      <div className="bg-white/40 -xl rounded-[2rem] p-4 md:p-8 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/60 relative overflow-hidden">
         
         {/* Decorative Background Blob inside the card */}
         <div className="absolute top-[-50%] left-[-20%] w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>

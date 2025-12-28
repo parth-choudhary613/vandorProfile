@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TiSocialInstagram } from "react-icons/ti";
 import { FaFacebook, FaTwitter, FaCamera, FaPhoneAlt, FaIceCream } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import Overview from '../overviewSection/overView';
+
 import './profileSection.css'; 
 
 
@@ -167,7 +167,7 @@ const FlavourFusion = () => {
           </div>
         </motion.div>
       </div>
-      <Overview />
+    
     </>
   );
 };
