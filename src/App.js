@@ -7,12 +7,12 @@ import "./profileSection/profileSection.css"; // Global CSS for fonts/animations
 import Navbar from "./NavBar";
 import FlavourFusion from "./profileSection/profileSection"; // Your Hero Section
 import Dashboard from "./overviewSection/overView"; // Your Products/Offers Section
-import Recommend from "./Recommendationsection/Recommend"; // Your Recommendations
+// import Recommend from "./Recommendationsection/Recommend"; // Your Recommendations
 import AboutSection from "./Testimonial/Testi"; // Your History/Team (Renamed from Testimonials)
 import ReviewSection from "./ReviewSection/Mainreview"; // Your Reviews
-import Lightbox from "./GallerySection/Gallery"; // Your Gallery
+import Lightbox from "./MenuList/mainList.js"; // Your Gallery
 import Footer from "./Footer";
-import FloatingParticles from "./MenuList/mainList"; // The background animation
+import FloatingParticles from "./MenuList/productList.js"; // The background animation
 
 function App() {
   return (
@@ -28,19 +28,18 @@ function App() {
           <Dashboard />
         </section>
 
-        <Recommend />
-        <Lightbox />
+        {/* <Recommend /> */}
 
 
+        <FloatingParticles />
+      </div>
+        <Lightbox /> 
         <section id="reviews">
           <ReviewSection />
         </section>
         <section id="about">
           <AboutSection />
         </section>
-        <FloatingParticles />
-
-      </div>
 
       <Footer />
     </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { TiSocialInstagram } from "react-icons/ti";
 import { FaFacebook, FaTwitter, FaClock, FaPhoneAlt, FaMapMarkerAlt, FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion"; 
-
+import Lightbox from '../GallerySection/Gallery';
 import Map from './map';
 import './overview.css'; 
 
@@ -192,7 +192,7 @@ const Dashboard = () => {
                   <Map /> 
               </div>
           </div>
-  
+          <Lightbox />
         </div>
       </div>
     </div>
